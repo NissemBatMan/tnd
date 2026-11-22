@@ -1,0 +1,48 @@
+{
+  "name": "tnd",
+  "version": "1.0.0",
+  "description": "Tunisian dinar (TND) helpers: exact millime maths, price formatting, parsing what people type, and amounts in French words for invoices.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "tunisia",
+    "tnd",
+    "dinar",
+    "millime",
+    "currency",
+    "money",
+    "format",
+    "invoice",
+    "french"
+  ],
+  "author": "Nissem (https://github.com/NissemBatMan)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NissemBatMan/tnd.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
